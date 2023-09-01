@@ -1,0 +1,17 @@
+.nav-item {
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(0,0,0,0.1); 
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: black;
+    font-weight: bold; 
+  }
+  
