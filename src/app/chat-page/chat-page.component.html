@@ -1,0 +1,20 @@
+<div class="container">
+    <h1 class="h1 mb-5 mt-5 font-weight-normal">Chat Page</h1>
+
+    <form class="mb-4"> 
+        <div class="form-group mb-3"> 
+            <label for="messagecontent" class="mb-4">New message</label>
+            <input type="text" [(ngModel)]="messagecontent" name="messagecontent" id="messagecontent" class="form-control" />
+        </div>
+        
+    </form>
+    <div class="form-group mb-3">
+        <button (click)="chat()" class="btn btn-primary">Send</button>
+    </div>
+
+    <h1 class="h1 mb-5 mt-5 font-weight-normal">Convo:</h1>
+
+    <div class="container mt-4"> 
+        <li *ngFor="let m of messages" class="mb-2">{{m}}</li> 
+    </div>
+</div>
